@@ -1,0 +1,93 @@
+<html>
+    <head></head>
+<H1 align = "Center"> Registration form</H1>
+<style>
+    table, td{
+        border: 1px solid black
+    }
+</style>
+<body>
+    <table class="tbl" border="1px">
+    <tr><td> User name</td>
+    <td id="Nancycad01"></td></tr>
+    
+    <tr><td > First Name</td>
+    <td id="Nancy"></td></tr>
+    
+    <tr><td>Last Name</td>
+    <td id="Arulanthu"></td></tr>
+    
+    <tr><td> Date of Birth></td>
+        <td id="11/10/1999"></td></tr>
+    
+    <tr><td> Gender</td>
+
+       <td><input type="Radio" name="Male" id="Male" value="Male">Male<br>
+        <input type="Radio" name="Female" id="Female" Value="Female">Female</td>
+		</tr>
+    
+    <tr><td for="Select your Qualification"> Select your Qualification </td><td>
+<select name="degree" id="degree">
+        <option> ...Select...</option>
+        <option value="UG in Mathematics">UG in Matnematics</option>
+        <option value="PG in Mathematics">PG in Mathematics</option>
+        <option value="UG in Physics">UG in Physics</option>
+        <option value="PG in Physics">PG in Physics</option>
+        <option value="UG in Computer Science">UG in computer Science</option>
+        <option value="PG in Computer Science">PG in Computer Science</option>
+        <option value="MCA">MCA</option>
+        <option value="BCA">BCA</option>
+        <option value="MBA">MBA</option>
+        <option value="BE">BE</option>
+        </select></td></tr>
+        
+        <tr><td id="District"></td><td>
+       
+        <input list="Location"></td></tr>
+       <datalist id="Location">
+        <option value="Pudukkottai">Pudukkottai</option>	
+        <option Value="Trichy">Trichy</option>
+        <option value="Karur">Karur</option>
+        <option valule="Dindugal">Dindugal</option>
+        <option value="Chennai">Chennai</option>	
+        <option value="Bangalore">Bangalore</option>
+        <option value="Coimbatore">Coimbatore</option>
+    </datalist>
+    
+    <tr><td for="Phone number">Phone Number</td><td>
+    <input type="Tel" name="Phone" id="Phone" Value="+91"></td></tr>
+    
+    <tr><td for="E-mail">E-mail</td><td>
+    <input type="mail" name="mail" id="mail" value=" "></td></tr>
+    
+    <tr><td for="Certificate upload"> Certificate Upload</td><td>
+    <input type="file" name="Certificate" id="Certificate"></td></tr>
+    
+    <tr><td for="Address">Address</td><td>
+    <input type="Textarea" name="Address" id="Address" Value=" "></td></tr>
+           
+    <tr><td for="Accept"> <input type="Checkbox" name="Accept" value=" "> I accept the terms and Condition</td><td>
+       
+            <input type="Submit" name="Submit" value="Submit">
+    <input type="Reset" name="Reset" Value="Reset"></td></tr>
+
+    
+    
+</table>
+
+<script> 
+    function clickSubmit(){
+        
+        document.getElementById('User Name').innerHTML = 'Nancycad01';
+        document.getElementById('First Name').innerHTML = 'Nancy';
+        document.getElementById('Last Name').innerHTML = 'Arulanthu';
+        document.getElementById('Date of Birth').innerHTML = '10/11/1999';
+        document.getElementById('Gender').innerHTML = 'Female';
+        document.getElementById('password').innerHTML = 'Nancy@123';
+        document.getElementById('E-mail').innerHTML = 'Nancyacad01@gmail.com';
+        document.getElementById('Phone number').innerHTML = '8428267221';
+        document.getElementById('Address').innerHTML = 'Trichy';
+    }
+    </script>
+</body>
+</html>
